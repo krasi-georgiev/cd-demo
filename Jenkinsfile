@@ -60,7 +60,7 @@
           if [[ "$SERVICES" -eq 0 ]]; then
             docker network rm cd-demo || true
             docker network create --driver overlay --attachable cd-demo
-            docker service create --network cd-demo --name cd-demo -p 8080:8080 ${DOCKERHUB_USERNAME}/cd-demo:${BUILD_NUMBER}
+            docker service create --replicas 3 --network cd-demo --name cd-demo -p 8080:8080 ${DOCKERHUB_USERNAME}/cd-demo:${BUILD_NUMBER}
           else
             docker service update --image ${DOCKERHUB_USERNAME}/cd-demo:${BUILD_NUMBER} cd-demo
           fi
