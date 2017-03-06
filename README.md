@@ -1,6 +1,6 @@
 # Simple CD pipeline demo at scale with Jenkins Swarm,Docker Swarm and Goland
 
-### [Original blog post link](https://www.vip-consult.solutions/post/easy-docker-swarm-jenkins-continuos-deployment-at-scale#content)
+### [Original blog post link](https://www.vip-consult.solutions/post/easy-docker-swarm-jenkins-continuous-deployment-at-scale#content)
 
 ## First let's create the jenkins master
 
