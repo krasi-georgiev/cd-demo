@@ -97,4 +97,4 @@ so after this Github can send webhooks using your external ip and the external p
 
 <br/>
 ## Required :) - Fork it and give it a try
-Just [fork the project](https://github.com/vipconsult/cd-demo#fork-destination-box) and change the docker hub username at the top of the Jenkinsfile.
+Just [fork the project](https://github.com/krasi-georgiev/cd-demo) and change the docker hub username at the top of the Jenkinsfile.
