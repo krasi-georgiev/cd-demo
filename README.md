@@ -72,7 +72,7 @@ first create a secret that will be used by the Jenkins slaves to connect to the 
 * **LABELS=docker-test**  the jenkins slave label. This is used when you define where to run each pipeline step - the labels need to match the ones used in the Jenkinsfile - node("docker-test") , node("docker-stage") , node("docker-prod")
 * **secret source=jenkins-v1,target=jenkins** using the secret created in the previous step, needs to match a user on the jenkins master
 
-<br/>
+
 ## Finally lets start building!
 Create a new GitHub Organization job using the Jenkins GUI - this will scan all repositories for a Jenkinsfile in the root directory and add it as a new job.
 * **Owner** this is the github account or organization - **vipconsult** in this case
@@ -80,7 +80,6 @@ Create a new GitHub Organization job using the Jenkins GUI - this will scan all 
 * The Jenkinsfile is set to use credentials with ID "*DockerHub*" so also need to create those.
 
 
-<br/>
 ## Automate the builds with Github Webhooks
 Using the Github Webhooks every repo change will trigger a new build.
 
@@ -95,6 +94,6 @@ It uses UPNP protocol to automatically open and map a port to your Jenkins maste
 * **8081** external port useg by Github webhooks
 so after this Github can send webhooks using your external ip and the external port like http://216.58.213.78:8081/
 
-<br/>
+
 ## Required :) - Fork it and give it a try
 Just [fork the project](https://github.com/krasi-georgiev/cd-demo) and change the docker hub username at the top of the Jenkinsfile.
