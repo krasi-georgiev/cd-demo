@@ -22,7 +22,7 @@
 * **Self-Organizing Swarm Plug-in Modules** deploy each Docker swarm node as a jenkins slave
 * **GitHub Branch Source Plugin** scan a github account and automatically create jobs for repos that have a Jenkinsfile in the root directory. It also creates a github webhook so every repo push will trigger a build.
 
-<br/>
+
 ## Now let's add some jenkins slaves
 
 first create a secret that will be used by the Jenkins slaves to connect to the master
